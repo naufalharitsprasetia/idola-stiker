@@ -1,0 +1,197 @@
+/** @format */
+nav {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.454),
+    inset 0 -1px 0 rgba(52, 39, 39, 0.189);
+}
+.landing-section {
+  min-height: 92vh;
+  background-image: url(../img/bg-idola.png);
+  background-size: cover;
+}
+.landing-title h1 {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 500;
+  /* font-size: 1rem;x */
+  color: #4a4a4a;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+.navbar-collapse ul li {
+  margin: 0 1.5rem;
+}
+.profile-text p {
+  line-height: 2.2rem;
+}
+.information-card svg rect {
+  padding: 1rem;
+}
+@keyframes flutuar {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+#myBtnTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: var(--primary);
+  color: black;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  /* padding: 10px 15px; */
+  border-radius: 10px;
+  animation: flutuar 2.5s linear infinite;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+}
+
+#myBtnTop:hover {
+  background-color: #97d5f0;
+  box-shadow: none;
+}
+/* contact us */
+/* Information */
+.information .card {
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #c4c4c4;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.information .card:hover {
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);
+}
+.title-contact {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.contact-us {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  border-radius: 30px;
+  border: 1px solid #c4c4c4;
+  padding: 40px 30px;
+  margin-top: 38px;
+}
+
+.contact-us .left,
+.contact-us .right {
+  width: 100%;
+}
+
+.contact-us .left p,
+.contact-us .right p {
+  color: #4b4b4b;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.contact-us .left input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-us .right textarea {
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 50%;
+}
+
+.contact-us .right button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  background: #00a2e9;
+  border: none;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 35px;
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+}
+
+.contact-us .right button:hover {
+  background: #22b1ee;
+  cursor: pointer;
+  color: #fff;
+}
+/* footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(207, 226, 255);
+  padding: 0px 30px 20px 30px;
+}
+
+footer p {
+  color: #00a2e9;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.line-footer {
+  width: 100%;
+  height: 1px;
+  background-color: #00a2e9;
+  margin: 0 0 20px 0;
+}
+
+/* end footer */
+.logout-button {
+  transition: 1s;
+}
+.logout-button a {
+  transition: 1s;
+}
+.logout-button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+.logout-button:hover a {
+  color: black !important;
+}

@@ -1,0 +1,233 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDOLA STIKER</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo-idola-transparan.png" type="image/png" />
+    <!--  -->
+    <!-- {{-- Font Awesome --}} -->
+    <script
+      src="https://kit.fontawesome.com/5d8dfb0173.js"
+      crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap"
+      rel="stylesheet" />
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css"
+      rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand pt-2 ps-4" href="#"
+            ><img src="img/logo-idola.png" width="150" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ps-5"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html">Ajukan Produk</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="btn btn-primary position-relative">
+                  <i class="fa-solid fa-cart-shopping"></i> Cart
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    id="cart-span">
+                    <span class="visually-hidden">keranjang belanja</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Others
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="other.html#about">About</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="other.html#location"
+                      >Location</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="other.html#contact"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item logout-button badge text-bg-primary">
+                <a class="nav-link text-white" href="sign-in.html">LOGOUT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+    <button
+      onclick="topFunction()"
+      id="myBtnTop"
+      title="Go to top"
+      style="display: block">
+      <iconify-icon icon="mingcute:arrow-up-line"></iconify-icon>
+    </button>
+    <main>
+      <!-- Cart Section -->
+      <section class="cart-section m-5 p-5">
+        <h1>Checkout</h1>
+        <span class="badge bg-danger" id="clear" style="cursor: pointer"
+          >Clear</span
+        >
+        <br />
+        <div class="my-2">
+          <label for="namaSaya" class="form-label">Nama :</label>
+          <input
+            type="text"
+            class="form-control"
+            required
+            placeholder="Masukkan Nama Anda..."
+            id="namaSaya" />
+        </div>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Kategori</th>
+              <th scope="col">Produk</th>
+              <th scope="col">Harga</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr class="total">
+              <th colspan="3" scope="row">Total</th>
+              <td id="totalHarga">Rp. 0,-</td>
+            </tr>
+            <tr class="checkout">
+              <th scope="row" colspan="3">Checkout</th>
+              <td>
+                <button class="btn btn-primary" onclick="bayarsekarang()">
+                  Bayar
+                </button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <img src="img/logo-idola-transparan.png" alt="" width="500" />
+      <div class="line-footer"></div>
+      <p>©copyright Idola Stiker 2024</p>
+    </footer>
+    <!-- my script -->
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    <!-- script -->
+    <script>
+      function bayarsekarang() {
+        const namaSaya = document.getElementById("namaSaya").value;
+        const kategoriElements = document.querySelectorAll(".kategori-barang");
+        const namaElements = document.querySelectorAll(".nama-barang");
+        const hargaElements = document.querySelectorAll(".harga-barang");
+        const total = document.getElementById("totalHarga").textContent;
+        const phoneNumber = "6282256491037"; // Ganti dengan nomor WhatsApp Anda
+        let test = `nama saya: ${decodeURIComponent(
+          namaSaya
+        )}, ingin membeli barang-barang berikut : `;
+        console.log(namaSaya);
+        if (namaSaya == "") {
+          test = "Saya Ingin Membeli bebarapa barang sebagai berikut : ";
+        }
+        // Membangun string untuk WhatsApp dengan detail barang
+        let message = `Assalamualaikum, ${test}\n`;
+
+        for (let i = 0; i < kategoriElements.length; i++) {
+          const kategori = decodeURIComponent(kategoriElements[i].textContent);
+          const nama = decodeURIComponent(namaElements[i].textContent);
+          const harga = decodeURIComponent(hargaElements[i].textContent);
+
+          message += `\nBarang ${
+            i + 1
+          }:\nKategori: ${kategori}\nNama: ${nama}\nHarga: ${harga}\n`;
+        }
+
+        message += `\nTotal: ${decodeURIComponent(total)}`;
+
+        // Membangun URL untuk WhatsApp dengan pesan yang dibuat
+        const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+          message
+        )}`;
+
+        // Mengirim pesan melalui WhatsApp
+        window.open(whatsappURL);
+
+        // Reset formulir setelah mengirim pesan
+        localStorage.clear();
+        updateTotalRow();
+      }
+    </script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

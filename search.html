@@ -1,0 +1,242 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDOLA STIKER</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo-idola-transparan.png" type="image/png" />
+    <!--  -->
+    <!-- {{-- Font Awesome --}} -->
+    <script
+      src="https://kit.fontawesome.com/5d8dfb0173.js"
+      crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap"
+      rel="stylesheet" />
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.all.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.28/dist/sweetalert2.min.css"
+      rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand pt-2 ps-4" href="#"
+            ><img src="img/logo-idola.png" width="150" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse ps-5"
+            id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="search.html">Ajukan Produk</a>
+              </li>
+              <li class="nav-item">
+                <a href="cart.html" class="btn btn-primary position-relative">
+                  <i class="fa-solid fa-cart-shopping"></i> Cart
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    id="cart-span">
+                    <span class="visually-hidden">keranjang belanja</span>
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Others
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="other.html">About</a></li>
+                  <li>
+                    <a class="dropdown-item" href="other.html">Location</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="other.html">Contact Us</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item logout-button badge text-bg-primary">
+                <a class="nav-link text-white" href="sign-in.html">LOGOUT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+    <button
+      onclick="topFunction()"
+      id="myBtnTop"
+      title="Go to top"
+      style="display: block">
+      <iconify-icon icon="mingcute:arrow-up-line"></iconify-icon>
+    </button>
+    <main>
+      <!-- Cart Section -->
+      <section class="search-section m-5 p-5">
+        <img
+          src="img/logo-idola-transparan.png"
+          class="float-end"
+          width="200"
+          alt="" />
+        <h4>Ajukan Barang yang anda inginkan tetapi belum ada di toko ini.</h4>
+        <hr />
+        <div class="mb-3">
+          <label for="nama-barang" class="form-label">Nama Barang</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nama-barang"
+            placeholder="Ajukan Barang" />
+          <br />
+          <label for="harga-barang" class="form-label">Harga Barang</label>
+          <input
+            type="number"
+            class="form-control"
+            id="harga-barang"
+            placeholder="Ajukan Harga Barang" />
+        </div>
+        <div class="mb-3">
+          <label for="desc-barang" class="form-label">Deskripsi barang</label>
+          <textarea
+            class="form-control"
+            id="desc-barang"
+            rows="3"
+            placeholder="Tambah Deskripsi"></textarea>
+        </div>
+        <div class="">
+          <label for="gambar-barang" class="form-label"
+            >Berikan Contoh Gambar Barang</label
+          >
+          <input
+            class="form-control"
+            type="file"
+            id="gambar-barang"
+            placeholder="Berikan Contoh Gambar Barang" />
+        </div>
+        <br />
+        <button
+          type="button"
+          onclick="previewBarang()"
+          class="btn btn-outline-primary">
+          Preview
+        </button>
+      </section>
+      <section id="section-tersembunyi" style="display: none">
+        <hr />
+        <div class="container">
+          <h4>Preview Barang Yang Diajukan :</h4>
+          <h5>Nama : <span id="namaBarang"></span></h5>
+          <h5>Harga : <span id="hargaBarang"></span></h5>
+          <h5>Deskripsi : <span id="deskripsiBarang"></span></h5>
+          <img id="gambarBarang" alt="prev" width="400" />
+        </div>
+      </section>
+      <hr />
+      <section class="after-ajuan">
+        <div class="container">
+          <h6>Yang Anda Ajukan :</h6>
+          <ol>
+            <li>Nama Barang</li>
+            <li>Harga Barang</li>
+            <li>Deskripsi Barang</li>
+            <li>Contoh Gambar</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <img src="img/logo-idola-transparan.png" alt="" width="500" />
+      <div class="line-footer"></div>
+      <p>©copyright Idola Stiker 2024</p>
+    </footer>
+    <!-- my script -->
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    <!-- SCRIPT -->
+    <script>
+      function previewBarang() {
+        const namaInputBarang = document.getElementById("nama-barang");
+        const hargaInputBarang = document.getElementById("harga-barang");
+        const deskripsiInputBarang = document.getElementById("desc-barang");
+        //
+        const namaBarang = document.getElementById("namaBarang");
+        const hargaBarang = document.getElementById("hargaBarang");
+        const deskripsiBarang = document.getElementById("deskripsiBarang");
+        //
+        namaBarang.innerHTML = namaInputBarang.value;
+        hargaBarang.innerHTML = hargaInputBarang.value;
+        deskripsiBarang.innerHTML = deskripsiInputBarang.value;
+        //
+        //
+        const gambarInputBarang = document.getElementById("gambar-barang");
+        const gambarBarang = document.getElementById("gambarBarang");
+        gambarBarang.innerHTML = gambarInputBarang.value;
+        // Buat objek URL untuk file gambar
+        if (gambarInputBarang.files.length > 0) {
+          var imageFile = gambarInputBarang.files[0];
+          var imageURL = URL.createObjectURL(imageFile);
+          gambarBarang.src = imageURL;
+        }
+        const sectionHidden = document.getElementById("section-tersembunyi");
+        sectionHidden.style.display = "block";
+      }
+    </script>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
